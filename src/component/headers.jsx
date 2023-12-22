@@ -1,18 +1,23 @@
 
-
+import {Link} from "react-router-dom"
+import Login from "../pages/login"
 
 function Header(){
 
     return (
         <nav>
-            <div className="log"></div>
-            <div className="links">
+            <div className="log">
+                <p>T<span>W Gedeon</span></p>
+            </div>
+            <div className="links-contant">
                 <ul className="link">
-                    <li className="nav-link">Welcome</li>
-                    <li className="nav-link">I'am</li>
-                    <li className="nav-link">Contact-me</li>
-                    <li className="nav-link">Blogs</li>
-                    <li className="nav-link">Login</li>
+                <li><Link to="/back" className="links">Welcome</Link></li>
+                <li><Link to="/" className="links">I'am</Link></li>
+                <li><Link to="/" className="links">My skills</Link></li>
+                <li><Link to="/" className="links">Contact-me</Link></li>
+                <li><Link to="/" className="links">Blogs</Link></li>
+                <li><Link to="/login" className="linkss">Log-In</Link></li>
+                    
                 </ul>
             </div>
         </nav>

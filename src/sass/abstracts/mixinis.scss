@@ -1,0 +1,14 @@
+
+@mixin flexs($disply,$justfy,$alin,){
+    display: $disply;
+    justify-content: $justfy;
+    align-items: $alin;
+}
+
+@mixin butttom($color,$backgroung-color,$font-size,$padding){
+    color:$color;
+    background-color: $backgroung-color;
+    font-size: $font-size;
+    padding: $padding;
+
+}

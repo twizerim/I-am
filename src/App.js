@@ -1,11 +1,19 @@
 
-import './App.css';
-import Header from './component/headers';
+import React from "react";
+import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
+import Wellcome from "./pages/welcome";
+import Login from "./pages/login";
 
-function App() {
+
+function App(){
   return (
-    <Header/>
-  );
+    <Router>
+      <Routes>
+        <Route path="/back" element={<Wellcome/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
+        
+      </Routes>
+    </Router>
+  )
 }
-
-export default App;
+export default App

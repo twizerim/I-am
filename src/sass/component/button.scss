@@ -1,0 +1,9 @@
+
+.buto-continer{
+    @include flexs(flex,center,center);
+
+    button{
+        @include butttom($second-color,$button-hova,1.5rem,1rem 3rem)
+    }
+    
+}

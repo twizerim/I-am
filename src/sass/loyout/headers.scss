@@ -1,0 +1,70 @@
+nav{
+
+    @include flexs(flex,space-between,center);
+    background-color: $first-color;
+    padding-top: 1px;
+    padding: 2px 6rem;
+    z-index: 9999;
+    position: -webkit-sticky;
+    position: sticky;
+    scroll-behavior: smooth;
+    top: 0;
+   
+    p{
+        font-size: 4rem;
+        color: $second-color;
+        font-weight: bolder;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        span{
+            font-size: 2rem;
+            color: $button-color;
+            font-weight: 700
+        }
+        
+        &:hover{
+            transform: translate(-4px, -4px)
+        }
+    }
+
+
+    .link{
+        @include flexs(flex,space-between,center);
+        gap: 3rem;
+        list-style: none;
+
+
+        .links{
+            text-decoration: none;
+            color: $second-color;
+            font-weight: 700;
+            font-size: 2rem;
+
+            &:hover{
+                border-bottom: 2px solid $button-color;
+            }
+        }
+
+        .linkss{
+            text-decoration: none;
+            color: $second-color;
+            font-size: 2rem;
+            border-radius: 5px;
+            padding: 0px 15px;
+            font-weight: 700;
+
+            &:hover{
+                background: rgb(121, 11, 115);
+            }
+        }
+        
+        
+    }
+
+}
+
+
+
+
+  

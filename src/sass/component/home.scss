@@ -1,0 +1,68 @@
+
+.wecome-container{
+
+    background-image:url("https://cdn.thewirecutter.com/wp-content/media/2022/10/laptopstopicpage-2048px-2102-3x2-1.jpg?auto=webp&quality=75&crop=3:2&width=1024");
+    height: 88vh;
+    @include flexs(flex,space-between,center);
+    padding: 2rem  6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   object-fit: cover;
+   background-attachment: fixed;
+
+
+   .image{
+       @include flexs(flex,center,center);
+          img{
+              width:300px;
+              height: 320px;
+              border-radius: 50%;
+              animation: nice 3s ease-in-out infinite
+           }
+           &:hover{
+            @keyframes nice{
+                0% { transform: translateY(-20px); };
+                50% {  transform: translateY(0); };
+                 100% { opacity: 0; transform: translateY(20px); };
+            }
+           }
+
+           i{
+             display: inline-block;
+             animation: wordAnimation 3s ease-in-out infinite;
+             color: $first-color;
+             font-size: 2rem;
+             font-weight: 700;
+           }
+           @keyframes wordAnimation {
+            0% { opacity: 0; transform: translateY(20px); }
+            50% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-20px); }
+          }
+
+   }
+
+    .welcome-text{
+        background-color: $second-color;
+        width: 40%;
+        padding: 2rem;
+        transition:all .3s ;
+        cursor: pointer;
+
+        h5{
+            font-size: 2rem;
+            .name{
+                font-weight: bolder;
+            }
+        }
+        p{
+            font-size: 1.6rem;
+        }
+
+        &:hover{
+            transform: rotateY(50deg);
+        }
+    }
+
+}
