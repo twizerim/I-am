@@ -1,0 +1,68 @@
+.contact-container{
+    
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  
+
+    .line-tochart{
+        background-image: linear-gradient(rgb(5, 126, 247),rgb(192, 217, 241), rgb(43, 43, 243));
+        padding: 2rem;
+        
+
+        h2{
+            font-size: 2.5rem
+        }
+        .text-welcome{
+            font-size: 1.7rem
+        }
+    }
+
+
+
+
+    .conatct-me{
+        @include flexs(flex,center,center);
+        // justify-content: first baseline;
+        background-color: aqua;
+        width: 50%;
+       
+
+
+        .letter{
+            background-color: $cord-color;
+            height: 100%;
+            width: 45%;
+            padding: 3rem 1.5rem;
+
+            .image{
+                @include flexs(flex,center,center);
+                padding: 2rem;
+                
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            p{
+                color: $second-color;
+                font-size: 1.3rem;
+            }
+        }
+        .forms{
+            padding: 2rem 3rem;
+
+            h2{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            
+            
+
+                
+                
+            
+        }
+    }
+}
