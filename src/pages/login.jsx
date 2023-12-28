@@ -25,6 +25,11 @@ function Login(){
                     
                     <Button name="Submit"/>
                 </form>
+                
+                <div className="back">
+                    <button>Cancel</button>
+                    <p>Forgot password</p>
+                </div>
                 <p>If you don't have any account <a href="/signup">SignUp</a></p>
             </div>
         </div>

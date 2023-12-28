@@ -29,5 +29,29 @@
                 width: 100%;
             }
         }
+        p{
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-left: 2.5rem;
+
+            a{
+                text-decoration: none;
+                margin-left: 1rem;
+                border-radius: 1rem;
+                padding: 0.2rem 1rem;
+
+                &:hover{
+                    background-color: $button-color;
+                    color: $second-color;
+                    
+                }
+            }
+        }
+        .back{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 2rem;
+            padding: 1.5rem;
+        }
     }
 }
